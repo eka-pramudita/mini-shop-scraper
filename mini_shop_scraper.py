@@ -11,7 +11,7 @@ import sqlite3
 driver = webdriver.Chrome(ChromeDriverManager().install())
 
 #Specify URL
-search_url = "https://shopee.co.id/han_river_official" 
+search_url = str(input("Enter link to Shopee store: "))
 
 driver.get(search_url)
 time.sleep(10) #sleep_between_interactions
